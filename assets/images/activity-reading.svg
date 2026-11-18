@@ -1,0 +1,78 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 400" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgGradBook" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#faf5ff"/>
+      <stop offset="100%" stop-color="#fdf2f8"/>
+    </linearGradient>
+    <linearGradient id="purplePink" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#c084fc"/>
+      <stop offset="50%" stop-color="#ec4899"/>
+      <stop offset="100%" stop-color="#9333ea"/>
+    </linearGradient>
+    <linearGradient id="goldLight" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fde047"/>
+      <stop offset="100%" stop-color="#fbbf24"/>
+    </linearGradient>
+    <filter id="softShadowBook" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="8" stdDeviation="12" flood-color="#ec4899" flood-opacity="0.18"/>
+    </filter>
+  </defs>
+
+  <rect width="600" height="400" rx="24" fill="url(#bgGradBook)"/>
+  <circle cx="500" cy="90" r="70" fill="#fbcfe8" opacity="0.4"/>
+  <circle cx="110" cy="310" r="90" fill="#e9d5ff" opacity="0.5"/>
+
+  <!-- Open Book Illustration -->
+  <g transform="translate(150, 110)" filter="url(#softShadowBook)">
+    <!-- Book Base / Cover -->
+    <path d="M 150 210 C 100 190 30 195 10 205 L 10 95 C 40 85 100 80 150 100 C 200 80 260 85 290 95 L 290 205 C 270 195 200 190 150 210 Z" fill="#7e22ce"/>
+    
+    <!-- Left Page (Back) -->
+    <path d="M 148 200 C 100 182 35 186 16 195 L 16 87 C 45 77 100 73 148 92 Z" fill="#fdf4ff"/>
+    <!-- Right Page (Back) -->
+    <path d="M 152 200 C 200 182 265 186 284 195 L 284 87 C 255 77 200 73 152 92 Z" fill="#fdf4ff"/>
+
+    <!-- Left Page (Front) -->
+    <path d="M 148 195 C 102 178 40 182 22 190 L 22 82 C 50 72 102 68 148 87 Z" fill="#ffffff"/>
+    <!-- Right Page (Front) -->
+    <path d="M 152 195 C 198 178 260 182 278 190 L 278 82 C 250 72 198 68 152 87 Z" fill="#ffffff"/>
+
+    <!-- Bookmark Ribbon -->
+    <path d="M 144 86 L 144 180 L 150 170 L 156 180 L 156 86 Z" fill="url(#purplePink)"/>
+
+    <!-- Text Lines on Left Page -->
+    <line x1="45" y1="105" x2="125" y2="105" stroke="#e9d5ff" stroke-width="4" stroke-linecap="round"/>
+    <line x1="45" y1="120" x2="130" y2="120" stroke="#fbcfe8" stroke-width="4" stroke-linecap="round"/>
+    <line x1="45" y1="135" x2="115" y2="135" stroke="#e9d5ff" stroke-width="4" stroke-linecap="round"/>
+    <line x1="45" y1="150" x2="125" y2="150" stroke="#fbcfe8" stroke-width="4" stroke-linecap="round"/>
+    <line x1="45" y1="165" x2="100" y2="165" stroke="#e9d5ff" stroke-width="4" stroke-linecap="round"/>
+
+    <!-- Text Lines on Right Page -->
+    <line x1="175" y1="105" x2="255" y2="105" stroke="#e9d5ff" stroke-width="4" stroke-linecap="round"/>
+    <line x1="175" y1="120" x2="245" y2="120" stroke="#fbcfe8" stroke-width="4" stroke-linecap="round"/>
+    <line x1="175" y1="135" x2="255" y2="135" stroke="#e9d5ff" stroke-width="4" stroke-linecap="round"/>
+    <line x1="175" y1="150" x2="230" y2="150" stroke="#fbcfe8" stroke-width="4" stroke-linecap="round"/>
+    <line x1="175" y1="165" x2="250" y2="165" stroke="#e9d5ff" stroke-width="4" stroke-linecap="round"/>
+  </g>
+
+  <!-- Glowing Knowledge Bulb / Ideas floating above book -->
+  <g transform="translate(275, 45)" filter="url(#softShadowBook)">
+    <!-- Bulb Glow Circle -->
+    <circle cx="25" cy="25" r="28" fill="#fef08a" opacity="0.3"/>
+    <!-- Bulb Body -->
+    <path d="M 12 25 C 12 16 18 10 25 10 C 32 10 38 16 38 25 C 38 31 34 35 32 38 L 18 38 C 16 35 12 31 12 25 Z" fill="url(#goldLight)"/>
+    <rect x="20" y="39" width="10" height="4" rx="2" fill="#d97706"/>
+    <rect x="22" y="44" width="6" height="3" rx="1.5" fill="#b45309"/>
+    <!-- Light Rays -->
+    <line x1="25" y1="2" x2="25" y2="-4" stroke="#eab308" stroke-width="3" stroke-linecap="round"/>
+    <line x1="43" y1="10" x2="48" y2="6" stroke="#eab308" stroke-width="3" stroke-linecap="round"/>
+    <line x1="7" y1="10" x2="2" y2="6" stroke="#eab308" stroke-width="3" stroke-linecap="round"/>
+  </g>
+
+  <!-- Floating Sparkles -->
+  <g fill="#ec4899">
+    <path d="M 140 90 q 8 0 8 -8 q 0 8 8 8 q -8 0 -8 8 q 0 -8 -8 -8 z"/>
+    <path d="M 450 160 q 10 0 10 -10 q 0 10 10 10 q -10 0 -10 10 q 0 -10 -10 -10 z"/>
+    <path d="M 400 60 q 6 0 6 -6 q 0 6 6 6 q -6 0 -6 6 q 0 -6 -6 -6 z"/>
+  </g>
+</svg>

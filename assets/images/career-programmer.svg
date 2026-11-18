@@ -1,0 +1,90 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 400" width="100%" height="100%">
+  <defs>
+    <linearGradient id="progBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#faf5ff"/>
+      <stop offset="100%" stop-color="#fdf2f8"/>
+    </linearGradient>
+    <linearGradient id="screenGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#2e1065"/>
+      <stop offset="100%" stop-color="#3b0764"/>
+    </linearGradient>
+    <linearGradient id="codeGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f472b6"/>
+      <stop offset="100%" stop-color="#c084fc"/>
+    </linearGradient>
+    <filter id="progShadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="10" stdDeviation="14" flood-color="#7e22ce" flood-opacity="0.25"/>
+    </filter>
+  </defs>
+
+  <rect width="600" height="400" rx="24" fill="url(#progBg)"/>
+  <circle cx="90" cy="80" r="70" fill="#fbcfe8" opacity="0.4"/>
+  <circle cx="510" cy="320" r="80" fill="#e9d5ff" opacity="0.5"/>
+
+  <!-- Code Window / Laptop -->
+  <g transform="translate(130, 80)" filter="url(#progShadow)">
+    <!-- Laptop Body Screen -->
+    <rect x="20" y="20" width="300" height="190" rx="14" fill="#581c87"/>
+    <rect x="25" y="25" width="290" height="180" rx="10" fill="url(#screenGrad)"/>
+
+    <!-- Window Header -->
+    <rect x="25" y="25" width="290" height="28" rx="8" fill="#1e1b4b" opacity="0.6"/>
+    <!-- Window Dots -->
+    <circle cx="45" cy="39" r="5" fill="#f43f5e"/>
+    <circle cx="60" cy="39" r="5" fill="#fbbf24"/>
+    <circle cx="75" cy="39" r="5" fill="#34d399"/>
+    <!-- File Tab -->
+    <rect x="100" y="30" width="80" height="18" rx="4" fill="#3b0764"/>
+    <text x="110" y="43" fill="#e9d5ff" font-family="monospace" font-size="10" font-weight="bold">app.js</text>
+
+    <!-- Code Lines -->
+    <!-- Line 1: const dev = { -->
+    <text x="45" y="75" fill="#f472b6" font-family="monospace" font-size="13" font-weight="bold">const</text>
+    <text x="90" y="75" fill="#e9d5ff" font-family="monospace" font-size="13">programmer = {</text>
+
+    <!-- Line 2: name: 'Patthamarat', -->
+    <text x="65" y="100" fill="#c084fc" font-family="monospace" font-size="13">name:</text>
+    <text x="115" y="100" fill="#38bdf8" font-family="monospace" font-size="13">'Patthamarat'</text>
+    <text x="215" y="100" fill="#e9d5ff" font-family="monospace" font-size="13">,</text>
+
+    <!-- Line 3: role: 'Full-Stack Dev', -->
+    <text x="65" y="125" fill="#c084fc" font-family="monospace" font-size="13">passion:</text>
+    <text x="135" y="125" fill="#4ade80" font-family="monospace" font-size="13">'Coding &amp; Tech'</text>
+    <text x="250" y="125" fill="#e9d5ff" font-family="monospace" font-size="13">,</text>
+
+    <!-- Line 4: status: 'Building Future' -->
+    <text x="65" y="150" fill="#c084fc" font-family="monospace" font-size="13">future:</text>
+    <text x="125" y="150" fill="#fbbf24" font-family="monospace" font-size="13">'Top Programmer'</text>
+
+    <!-- Line 5: }; -->
+    <text x="45" y="175" fill="#e9d5ff" font-family="monospace" font-size="13">};</text>
+
+    <!-- Cursor Blink -->
+    <rect x="75" y="165" width="8" height="14" rx="2" fill="#f472b6" opacity="0.9"/>
+
+    <!-- Laptop Base -->
+    <path d="M -5 210 L 345 210 L 365 224 L -25 224 Z" fill="#6b21a8"/>
+    <rect x="130" y="210" width="80" height="5" rx="2" fill="#c084fc"/>
+  </g>
+
+  <!-- Floating Tags / Badges -->
+  <g filter="url(#progShadow)">
+    <!-- &lt;/&gt; Badge -->
+    <rect x="80" y="140" width="55" height="40" rx="10" fill="#ffffff"/>
+    <text x="89" y="167" fill="#7e22ce" font-family="sans-serif" font-weight="900" font-size="18">&lt;/&gt;</text>
+
+    <!-- Bug Fixed Badge -->
+    <rect x="420" y="110" width="90" height="36" rx="10" fill="#ec4899"/>
+    <text x="432" y="133" fill="#ffffff" font-family="sans-serif" font-weight="bold" font-size="12">🚀 Deploy</text>
+
+    <!-- React/Node Symbol Badge -->
+    <rect x="400" y="210" width="105" height="36" rx="10" fill="#7e22ce"/>
+    <text x="412" y="233" fill="#fdf4ff" font-family="sans-serif" font-weight="bold" font-size="12">💻 Solution</text>
+  </g>
+
+  <!-- Sparkles -->
+  <g fill="#f472b6">
+    <path d="M 120 70 q 8 0 8 -8 q 0 8 8 8 q -8 0 -8 8 q 0 -8 -8 -8 z"/>
+    <path d="M 480 80 q 10 0 10 -10 q 0 10 10 10 q -10 0 -10 10 q 0 -10 -10 -10 z"/>
+  </g>
+</svg>

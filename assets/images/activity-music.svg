@@ -1,0 +1,82 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 400" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fdf4ff"/>
+      <stop offset="100%" stop-color="#fae8ff"/>
+    </linearGradient>
+    <linearGradient id="pinkPurple" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f472b6"/>
+      <stop offset="50%" stop-color="#c084fc"/>
+      <stop offset="100%" stop-color="#9333ea"/>
+    </linearGradient>
+    <linearGradient id="glowGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fbcfe8" stop-opacity="0.8"/>
+      <stop offset="100%" stop-color="#e9d5ff" stop-opacity="0.3"/>
+    </linearGradient>
+    <filter id="softShadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="8" stdDeviation="12" flood-color="#a855f7" flood-opacity="0.18"/>
+    </filter>
+  </defs>
+
+  <!-- Background Card -->
+  <rect width="600" height="400" rx="24" fill="url(#bgGrad)"/>
+
+  <!-- Decorative circles -->
+  <circle cx="100" cy="80" r="60" fill="url(#glowGrad)"/>
+  <circle cx="500" cy="320" r="80" fill="url(#glowGrad)"/>
+  <circle cx="480" cy="100" r="30" fill="#fbcfe8" opacity="0.6"/>
+
+  <!-- Floating Audio Waves & Music Notes -->
+  <g filter="url(#softShadow)">
+    <!-- Audio Wave Bars -->
+    <rect x="70" y="240" width="14" height="60" rx="7" fill="#f472b6" opacity="0.75"/>
+    <rect x="95" y="210" width="14" height="90" rx="7" fill="#c084fc" opacity="0.85"/>
+    <rect x="120" y="180" width="14" height="120" rx="7" fill="url(#pinkPurple)"/>
+    <rect x="145" y="230" width="14" height="70" rx="7" fill="#f472b6" opacity="0.75"/>
+    <rect x="170" y="250" width="14" height="50" rx="7" fill="#c084fc" opacity="0.6"/>
+
+    <rect x="420" y="250" width="14" height="50" rx="7" fill="#c084fc" opacity="0.6"/>
+    <rect x="445" y="220" width="14" height="80" rx="7" fill="#f472b6" opacity="0.75"/>
+    <rect x="470" y="190" width="14" height="110" rx="7" fill="url(#pinkPurple)"/>
+    <rect x="495" y="225" width="14" height="75" rx="7" fill="#c084fc" opacity="0.85"/>
+    <rect x="520" y="245" width="14" height="55" rx="7" fill="#f472b6" opacity="0.75"/>
+  </g>
+
+  <!-- Central Headphones Icon / Illustration -->
+  <g transform="translate(180, 70)" filter="url(#softShadow)">
+    <!-- Headphone Band -->
+    <path d="M 40 140 A 80 80 0 0 1 200 140" fill="none" stroke="url(#pinkPurple)" stroke-width="20" stroke-linecap="round"/>
+    <path d="M 40 140 A 80 80 0 0 1 200 140" fill="none" stroke="#ffffff" stroke-width="4" stroke-linecap="round" opacity="0.5"/>
+
+    <!-- Left Ear Cup Base & Cushion -->
+    <rect x="20" y="120" width="36" height="70" rx="18" fill="url(#pinkPurple)"/>
+    <rect x="10" y="130" width="18" height="50" rx="9" fill="#7e22ce"/>
+    <circle cx="38" cy="155" r="8" fill="#ffffff" opacity="0.7"/>
+
+    <!-- Right Ear Cup Base & Cushion -->
+    <rect x="184" y="120" width="36" height="70" rx="18" fill="url(#pinkPurple)"/>
+    <rect x="212" y="130" width="18" height="50" rx="9" fill="#7e22ce"/>
+    <circle cx="202" cy="155" r="8" fill="#ffffff" opacity="0.7"/>
+
+    <!-- Sound Waves from Ears -->
+    <path d="M -10 135 A 30 30 0 0 0 -10 175" fill="none" stroke="#f472b6" stroke-width="4" stroke-linecap="round"/>
+    <path d="M 250 135 A 30 30 0 0 1 250 175" fill="none" stroke="#f472b6" stroke-width="4" stroke-linecap="round"/>
+  </g>
+
+  <!-- Floating Music Notes -->
+  <g fill="url(#pinkPurple)" filter="url(#softShadow)">
+    <!-- Note 1 -->
+    <path d="M 220 70 q 0 -20 20 -20 h 20 v 35 a 12 12 0 1 1 -10 -5 v -20 h -15 a 10 10 0 0 0 -15 10 z" />
+    <!-- Note 2 -->
+    <circle cx="370" cy="80" r="12"/>
+    <rect x="378" y="45" width="4" height="35" rx="2"/>
+    <path d="M 382 45 c 10 -5 18 5 22 15" fill="none" stroke="#9333ea" stroke-width="4" stroke-linecap="round"/>
+  </g>
+
+  <!-- Sparkles -->
+  <g fill="#f472b6">
+    <path d="M 160 130 q 6 0 6 -6 q 0 6 6 6 q -6 0 -6 6 q 0 -6 -6 -6 z"/>
+    <path d="M 430 110 q 8 0 8 -8 q 0 8 8 8 q -8 0 -8 8 q 0 -8 -8 -8 z"/>
+    <path d="M 300 240 q 10 0 10 -10 q 0 10 10 10 q -10 0 -10 10 q 0 -10 -10 -10 z"/>
+  </g>
+</svg>

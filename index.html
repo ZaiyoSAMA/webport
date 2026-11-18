@@ -1,0 +1,966 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ปัทมราช บูรณวินซ์ (ต้า) | IT Student & Aspiring Programmer Portfolio</title>
+  
+  <!-- Meta SEO & Description -->
+  <meta name="description" content="Personal Portfolio Website ของ ปัทมราช บูรณวินซ์ (ต้า) - นักศึกษาสายเทคโนโลยีสารสนเทศ (IT) ผู้มีความมุ่งมั่นสู่การเป็น Programmer และเจ้าของธุรกิจเทคโนโลยี">
+  <meta name="keywords" content="ปัทมราช บูรณวินซ์, ต้า, IT Portfolio, Portfolio นักศึกษา, Programmer, Information Technology">
+  <meta name="author" content="Patthamarat Buranawin">
+  
+  <!-- Favicon -->
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>💻</text></svg>">
+  
+  <!-- Google Fonts: Kanit & Prompt -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&family=Prompt:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+  
+  <!-- Lucide Icons -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+  
+  <!-- Main CSS -->
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+  <!-- Background Ambient Glow Elements -->
+  <div class="ambient-glow-1" aria-hidden="true"></div>
+  <div class="ambient-glow-2" aria-hidden="true"></div>
+
+  <!-- ===================================================================
+       1. NAVIGATION BAR
+       =================================================================== -->
+  <nav class="navbar" id="navbar">
+    <div class="container nav-container">
+      <!-- Brand Logo -->
+      <a href="#home" class="nav-brand" aria-label="Home">
+        <div class="brand-icon">
+          <span>T</span>
+        </div>
+        <div class="brand-text">
+          <span class="brand-name">Patthamarat</span>
+          <span class="brand-tag">IT PORTFOLIO</span>
+        </div>
+      </a>
+
+      <!-- Navigation Menu -->
+      <ul class="nav-menu" id="navMenu">
+        <li><a href="#home" class="nav-link active">Home</a></li>
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#education" class="nav-link">Education</a></li>
+        <li><a href="#skills" class="nav-link">Skills</a></li>
+        <li><a href="#activities" class="nav-link">Activities</a></li>
+        <li><a href="#goals" class="nav-link">Goals</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+
+      <!-- Action Button & Mobile Toggle -->
+      <div class="nav-actions">
+        <button type="button" class="btn-nav-resume" data-modal-target="resumeModal">
+          <i data-lucide="file-text"></i>
+          <span>ดูเรซูเม่ต้นฉบับ</span>
+        </button>
+        <button class="nav-toggle" id="navToggle" aria-label="เมนูหลัก" aria-expanded="false">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ===================================================================
+       2. HERO SECTION
+       =================================================================== -->
+  <section class="hero" id="home">
+    <div class="container">
+      <div class="hero-grid">
+        <!-- Hero Left: Text Introduction -->
+        <div class="hero-content fade-in-element">
+          <!-- Status Badges -->
+          <div class="hero-badge-container">
+            <span class="hero-badge highlight">
+              <i data-lucide="sparkles"></i>
+              <span>ยินดีต้อนรับสู่ Portfolio</span>
+            </span>
+            <span class="hero-badge">
+              <i data-lucide="code-2"></i>
+              <span>IT Student &amp; Aspiring Programmer</span>
+            </span>
+          </div>
+
+          <!-- Name & Title -->
+          <h1 class="hero-title">
+            <span class="name-highlight">ปัทมราช บูรณวินซ์</span>
+            <span class="hero-nickname">ต้า</span>
+          </h1>
+
+          <div class="hero-subtitle">
+            <span>IT Student</span>
+            <span class="hero-subtitle-pill">Aspiring Programmer</span>
+            <span class="hero-subtitle-pill">Tech Enthusiast</span>
+          </div>
+
+          <!-- Self Introduction Quote Box -->
+          <div class="hero-quote-box">
+            <div class="hero-quote-icon">
+              <i data-lucide="quote"></i>
+            </div>
+            <p class="hero-quote-text">
+              "สวัสดีครับ ผมชื่อปัทมราช เป็นนักศึกษาที่มีความสนใจด้านเทคโนโลยีสารสนเทศ 
+              ชอบพัฒนาตัวเองและเรียนรู้สิ่งใหม่ ๆ อยู่เสมอ มีความสนใจในการเขียนโปรแกรม เทคโนโลยี 
+              และการพัฒนาทักษะเพื่อเติบโตในสายงาน IT"
+            </p>
+          </div>
+
+          <!-- Action Buttons -->
+          <div class="hero-cta">
+            <a href="#about" class="btn btn-primary">
+              <i data-lucide="user"></i>
+              <span>เกี่ยวกับฉัน (About Me)</span>
+            </a>
+            <a href="#skills" class="btn btn-secondary">
+              <i data-lucide="cpu"></i>
+              <span>ดูทักษะ (View My Skills)</span>
+            </a>
+            <button type="button" class="btn btn-outline" data-modal-target="resumeModal">
+              <i data-lucide="eye"></i>
+              <span>ดูเรซูเม่ต้นฉบับ</span>
+            </button>
+          </div>
+        </div>
+
+        <!-- Hero Right: Avatar & Floating Badges -->
+        <div class="hero-visual fade-in-element delay-1">
+          <div class="avatar-wrapper">
+            <!-- Animated Glowing Ring -->
+            <div class="avatar-ring"></div>
+
+            <!-- Avatar Card -->
+            <div class="avatar-card">
+              <img src="assets/images/profile.png" alt="ปัทมราช บูรณวินซ์ (ต้า)" class="avatar-img" id="heroProfileImg">
+            </div>
+
+            <!-- Floating Top Badge -->
+            <div class="floating-badge badge-top">
+              <div class="badge-icon-box pink">
+                <i data-lucide="graduation-cap"></i>
+              </div>
+              <div>
+                <div style="font-size: 0.72rem; color: var(--text-muted);">การศึกษา</div>
+                <div>ปวช. เทคโนโลยีสารสนเทศ</div>
+              </div>
+            </div>
+
+            <!-- Floating Bottom Badge -->
+            <div class="floating-badge badge-bottom">
+              <div class="badge-icon-box purple">
+                <i data-lucide="terminal"></i>
+              </div>
+              <div>
+                <div style="font-size: 0.72rem; color: var(--text-muted);">เป้าหมายในอนาคต</div>
+                <div>Programmer &amp; Tech Biz</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================================================================
+       3. ABOUT ME SECTION
+       =================================================================== -->
+  <section class="about" id="about">
+    <div class="container">
+      <div class="section-header fade-in-element">
+        <div class="section-badge">
+          <i data-lucide="user-check"></i>
+          <span>ABOUT ME</span>
+        </div>
+        <h2 class="section-title">เกี่ยวกับฉัน</h2>
+        <p class="section-desc">ทำความรู้จักตัวตน ข้อมูลส่วนตัว และความมุ่งมั่นในการเรียนรู้สายงานเทคโนโลยี</p>
+      </div>
+
+      <div class="about-grid">
+        <!-- Left: Quick Info Card (Resume Specs) -->
+        <div class="profile-spec-card fade-in-element delay-1">
+          <div class="card-header-badge">
+            <h3>
+              <i data-lucide="id-card"></i>
+              <span>ข้อมูลส่วนตัว (Personal Info)</span>
+            </h3>
+            <span class="hero-badge highlight" style="font-size: 0.78rem;">IT Resume</span>
+          </div>
+
+          <ul class="spec-list">
+            <li class="spec-item">
+              <div class="spec-label">
+                <i data-lucide="user"></i>
+                <span>ชื่อ - นามสกุล</span>
+              </div>
+              <div class="spec-value">ปัทมราช บูรณวินซ์</div>
+            </li>
+
+            <li class="spec-item">
+              <div class="spec-label">
+                <i data-lucide="smile"></i>
+                <span>ชื่อเล่น</span>
+              </div>
+              <div class="spec-value">ต้า (Ta)</div>
+            </li>
+
+            <li class="spec-item">
+              <div class="spec-label">
+                <i data-lucide="cake"></i>
+                <span>วัน-เดือน-ปีเกิด</span>
+              </div>
+              <div class="spec-value">27 มิถุนายน 2549</div>
+            </li>
+
+            <li class="spec-item">
+              <div class="spec-label">
+                <i data-lucide="hourglass"></i>
+                <span>อายุ</span>
+              </div>
+              <div class="spec-value">19 ปี</div>
+            </li>
+
+            <li class="spec-item">
+              <div class="spec-label">
+                <i data-lucide="briefcase"></i>
+                <span>สถานะปัจจุบัน</span>
+              </div>
+              <div class="spec-value">นักศึกษา (Student)</div>
+            </li>
+
+            <li class="spec-item">
+              <div class="spec-label">
+                <i data-lucide="map-pin"></i>
+                <span>พื้นที่ / จังหวัด</span>
+              </div>
+              <div class="spec-value">ลำลูกกา, ปทุมธานี</div>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Right: Bio Narrative & Strengths -->
+        <div class="about-bio-container fade-in-element delay-2">
+          <h3 class="about-headline">
+            มุ่งมั่นพัฒนาทักษะด้านเทคโนโลยีสารสนเทศ <br>
+            พร้อมเปิดรับประสบการณ์และการเรียนรู้สิ่งใหม่ ๆ
+          </h3>
+          <p class="about-desc-text">
+            ผมเป็นคนที่ชอบในการพัฒนาตัวเองและเรียนรู้สิ่งใหม่ ๆ อยู่เสมอ 
+            ให้ความสนใจในสายงานเทคโนโลยีสารสนเทศ การเขียนโปรแกรม และโครงสร้างระบบคอมพิวเตอร์ 
+            มีความพร้อมในการฝึกฝนทักษะเพื่อก้าวเข้าสู่อุตสาหกรรมเทคโนโลยีในฐานะ Programmer มืออาชีพ
+          </p>
+          <p class="about-desc-text">
+            นอกจากด้านวิชาการและการเขียนโค้ดแล้ว ผมยังชอบทำกิจกรรมที่หลากหลาย เช่น 
+            การเล่นกีฬา การอ่านหนังสือเพื่อเปิดโลกทัศน์ และการฟังเพลงเพื่อสร้างแรงบันดาลใจและสมาธิในการทำงาน
+          </p>
+
+          <!-- Core Strengths Grid -->
+          <div class="traits-grid">
+            <div class="trait-card">
+              <div class="trait-icon">
+                <i data-lucide="trending-up"></i>
+              </div>
+              <div class="trait-info">
+                <h4>ชอบพัฒนาตัวเอง</h4>
+                <p>ใฝ่รู้ ต่อยอดทักษะใหม่ ๆ และไม่หยุดนิ่งที่จะปรับปรุงตนเอง</p>
+              </div>
+            </div>
+
+            <div class="trait-card">
+              <div class="trait-icon">
+                <i data-lucide="users"></i>
+              </div>
+              <div class="trait-info">
+                <h4>การทำงานเป็นทีม</h4>
+                <p>เปิดใจรับฟังความคิดเห็น สื่อสารชัดเจน และร่วมมือแก้ปัญหา</p>
+              </div>
+            </div>
+
+            <div class="trait-card">
+              <div class="trait-icon">
+                <i data-lucide="wrench"></i>
+              </div>
+              <div class="trait-info">
+                <h4>ทักษะด้านฮาร์ดแวร์</h4>
+                <p>เข้าใจชิ้นส่วนคอมพิวเตอร์ ซ่อมแซมและแก้ปัญหาอุปกรณ์ได้</p>
+              </div>
+            </div>
+
+            <div class="trait-card">
+              <div class="trait-icon">
+                <i data-lucide="zap"></i>
+              </div>
+              <div class="trait-info">
+                <h4>การตัดสินใจรวดเร็ว</h4>
+                <p>มีไหวพริบในการวิเคราะห์สถานการณ์และแก้ไขปัญหาเฉพาะหน้า</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================================================================
+       4. EDUCATION SECTION
+       =================================================================== -->
+  <section class="education" id="education">
+    <div class="container">
+      <div class="section-header fade-in-element">
+        <div class="section-badge">
+          <i data-lucide="graduation-cap"></i>
+          <span>EDUCATION</span>
+        </div>
+        <h2 class="section-title">ประวัติการศึกษา</h2>
+        <p class="section-desc">เส้นทางการศึกษาและพื้นฐานความรู้ด้านเทคโนโลยีสารสนเทศ</p>
+      </div>
+
+      <!-- Timeline Container -->
+      <div class="timeline-container">
+        <!-- Timeline Item 1: ปวช. สาขาเทคโนโลยีสารสนเทศ -->
+        <div class="timeline-item left fade-in-element">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card">
+            <div class="timeline-date-badge">
+              <i data-lucide="calendar"></i>
+              <span>ปีที่สำเร็จการศึกษา : 2567</span>
+            </div>
+            <h3 class="timeline-degree">ประกาศนียบัตรวิชาชีพ (ปวช.)</h3>
+            <div class="timeline-major">สาขาเทคโนโลยีสารสนเทศ (Information Technology)</div>
+            <div class="timeline-school">
+              <i data-lucide="building-2"></i>
+              <span>วิทยาลัยเทคโนโลยีสยามบริหารธุรกิจ (SBAC)</span>
+            </div>
+            <p>
+              ศึกษาหลักสูตรเทคโนโลยีสารสนเทศ เน้นความรู้ด้านการเขียนโปรแกรมคอมพิวเตอร์ 
+              การพัฒนาเว็บไซต์ โครงสร้างฮาร์ดแวร์ เครือข่ายคอมพิวเตอร์ และการนำเทคโนโลยีไปประยุกต์ใช้งานจริง
+            </p>
+            <div class="timeline-highlights">
+              <span class="highlight-pill">C Programming</span>
+              <span class="highlight-pill">Web Development (HTML/CSS)</span>
+              <span class="highlight-pill">Computer Hardware</span>
+              <span class="highlight-pill">Google Workspace</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Timeline Item 2: มัธยมศึกษาตอนต้น -->
+        <div class="timeline-item right fade-in-element delay-1">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card">
+            <div class="timeline-date-badge">
+              <i data-lucide="calendar"></i>
+              <span>ปีที่สำเร็จการศึกษา : 2564</span>
+            </div>
+            <h3 class="timeline-degree">ระดับมัธยมศึกษาตอนต้น (มัธยมศึกษาปีที่ 3)</h3>
+            <div class="timeline-major">แผนการเรียนพื้นฐานวิทยาศาสตร์ - คณิตศาสตร์</div>
+            <div class="timeline-school">
+              <i data-lucide="school"></i>
+              <span>โรงเรียนเตรียมอุดมศึกษาสุวินทวงศ์</span>
+            </div>
+            <p>
+              สำเร็จการศึกษาชั้นมัธยมศึกษาปีที่ 3 สร้างพื้นฐานการคิดเชิงตรรกะ คณิตศาสตร์ 
+              และการใช้คอมพิวเตอร์เบื้องต้น ซึ่งเป็นจุดเริ่มต้นที่ทำให้สนใจศึกษาต่อในสายงาน IT
+            </p>
+            <div class="timeline-highlights">
+              <span class="highlight-pill">สำเร็จการศึกษา ม.3</span>
+              <span class="highlight-pill">พื้นฐานคณิตศาสตร์-วิทย์</span>
+              <span class="highlight-pill">ทักษะคอมพิวเตอร์เบื้องต้น</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================================================================
+       5. SKILLS SECTION
+       =================================================================== -->
+  <section class="skills" id="skills">
+    <div class="container">
+      <div class="section-header fade-in-element">
+        <div class="section-badge">
+          <i data-lucide="cpu"></i>
+          <span>SKILLS &amp; ABILITIES</span>
+        </div>
+        <h2 class="section-title">ทักษะและความสามารถ</h2>
+        <p class="section-desc">
+          ทักษะทางเทคนิค (Technical Skills) และทักษะด้านอารมณ์และการทำงาน (Soft Skills) จากเรซูเม่
+        </p>
+      </div>
+
+      <!-- Skills Category Filter Tabs -->
+      <div class="skills-filter fade-in-element">
+        <button type="button" class="filter-btn active" data-filter="all">
+          <i data-lucide="layers"></i>
+          <span>ทักษะทั้งหมด</span>
+        </button>
+        <button type="button" class="filter-btn" data-filter="tech">
+          <i data-lucide="code"></i>
+          <span>Technical Skills</span>
+        </button>
+        <button type="button" class="filter-btn" data-filter="soft">
+          <i data-lucide="heart-handshake"></i>
+          <span>Soft Skills</span>
+        </button>
+      </div>
+
+      <!-- Skills Container -->
+      <div class="skills-container">
+        <!-- 1. Technical Skills Block -->
+        <div class="skill-category-block fade-in-element delay-1" data-category="tech">
+          <div class="category-header">
+            <div class="category-icon tech">
+              <i data-lucide="code-2"></i>
+            </div>
+            <div>
+              <h3 class="category-title">Technical Skills</h3>
+              <p class="category-subtitle">ทักษะด้านการเขียนโค้ด ซอฟต์แวร์ และเทคโนโลยีสารสนเทศ</p>
+            </div>
+          </div>
+
+          <div class="skill-cards-list">
+            <!-- HTML5 -->
+            <div class="skill-card">
+              <div class="skill-card-top">
+                <div class="skill-title-group">
+                  <div class="skill-icon-wrap html5">
+                    <i data-lucide="file-code-2"></i>
+                  </div>
+                  <span class="skill-name">HTML5</span>
+                </div>
+                <span class="skill-level-badge">ใช้งานได้คล่องแคล่ว</span>
+              </div>
+              <p class="skill-desc">การจัดโครงสร้างเว็บเพจ Semantic Elements, SEO เบื้องต้น และ Accessibility</p>
+              <div class="skill-progress-track">
+                <!-- สามารถแก้ไขระดับแถบแสดงผลได้ในอนาคตผ่าน style="width: XX%" -->
+                <div class="skill-progress-bar" style="width: 85%;"></div>
+              </div>
+            </div>
+
+            <!-- CSS3 -->
+            <div class="skill-card">
+              <div class="skill-card-top">
+                <div class="skill-title-group">
+                  <div class="skill-icon-wrap css3">
+                    <i data-lucide="palette"></i>
+                  </div>
+                  <span class="skill-name">CSS3</span>
+                </div>
+                <span class="skill-level-badge">ออกแบบและจัดสไตล์ได้ดี</span>
+              </div>
+              <p class="skill-desc">การจัด Layout ด้วย Flexbox, CSS Grid, Responsive Design และ Soft UI Animations</p>
+              <div class="skill-progress-track">
+                <div class="skill-progress-bar" style="width: 80%;"></div>
+              </div>
+            </div>
+
+            <!-- C Programming -->
+            <div class="skill-card">
+              <div class="skill-card-top">
+                <div class="skill-title-group">
+                  <div class="skill-icon-wrap c-lang">
+                    <i data-lucide="binary"></i>
+                  </div>
+                  <span class="skill-name">C Programming</span>
+                </div>
+                <span class="skill-level-badge">พื้นฐานโครงสร้างแน่น</span>
+              </div>
+              <p class="skill-desc">ความเข้าใจด้าน Logic, ตัวแปร, Control Flow, Functions, Arrays และ Memory พื้นฐาน</p>
+              <div class="skill-progress-track">
+                <div class="skill-progress-bar" style="width: 75%;"></div>
+              </div>
+            </div>
+
+            <!-- Google Workspace -->
+            <div class="skill-card">
+              <div class="skill-card-top">
+                <div class="skill-title-group">
+                  <div class="skill-icon-wrap workspace">
+                    <i data-lucide="cloud"></i>
+                  </div>
+                  <span class="skill-name">Google Workspace</span>
+                </div>
+                <span class="skill-level-badge">เชี่ยวชาญการใช้งาน</span>
+              </div>
+              <p class="skill-desc">การทำงานร่วมกันบน Cloud ด้วย Google Docs, Sheets, Slides, Drive และ Forms</p>
+              <div class="skill-progress-track">
+                <div class="skill-progress-bar" style="width: 90%;"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 2. Soft Skills Block -->
+        <div class="skill-category-block fade-in-element delay-2" data-category="soft">
+          <div class="category-header">
+            <div class="category-icon soft">
+              <i data-lucide="sparkles"></i>
+            </div>
+            <div>
+              <h3 class="category-title">Soft Skills &amp; Practical Skills</h3>
+              <p class="category-subtitle">ทักษะด้านการปฏิบัติ การทำงานร่วมกับผู้อื่น และการแก้ปัญหา</p>
+            </div>
+          </div>
+
+          <div class="skill-cards-list">
+            <!-- การซ่อมอุปกรณ์ฮาร์ดแวร์ -->
+            <div class="skill-card">
+              <div class="skill-card-top">
+                <div class="skill-title-group">
+                  <div class="skill-icon-wrap hardware">
+                    <i data-lucide="wrench"></i>
+                  </div>
+                  <span class="skill-name">การซ่อมอุปกรณ์ฮาร์ดแวร์</span>
+                </div>
+                <span class="skill-level-badge">ตรวจเช็กและซ่อมแซมได้</span>
+              </div>
+              <p class="skill-desc">ตรวจวิเคราะห์ปัญหาชิ้นส่วนคอมพิวเตอร์ การประกอบ PC และการแก้ปัญหาอุปกรณ์เบื้องต้น</p>
+              <div class="skill-progress-track">
+                <div class="skill-progress-bar" style="width: 85%;"></div>
+              </div>
+            </div>
+
+            <!-- การทำงานเป็นทีม -->
+            <div class="skill-card">
+              <div class="skill-card-top">
+                <div class="skill-title-group">
+                  <div class="skill-icon-wrap teamwork">
+                    <i data-lucide="users"></i>
+                  </div>
+                  <span class="skill-name">การทำงานเป็นทีม (Teamwork)</span>
+                </div>
+                <span class="skill-level-badge">ประสานงานร่วมกันได้ราบรื่น</span>
+              </div>
+              <p class="skill-desc">สื่อสารอย่างมีประสิทธิภาพ ช่วยเหลือเพื่อนร่วมงาน และเปิดรับคำติชมเพื่อพัฒนาชิ้นงาน</p>
+              <div class="skill-progress-track">
+                <div class="skill-progress-bar" style="width: 90%;"></div>
+              </div>
+            </div>
+
+            <!-- การเรียนรู้ทักษะใหม่ ๆ -->
+            <div class="skill-card">
+              <div class="skill-card-top">
+                <div class="skill-title-group">
+                  <div class="skill-icon-wrap learning">
+                    <i data-lucide="lightbulb"></i>
+                  </div>
+                  <span class="skill-name">การเรียนรู้ทักษะใหม่ ๆ</span>
+                </div>
+                <span class="skill-level-badge">Fast Learner &amp; Adaptable</span>
+              </div>
+              <p class="skill-desc">มีความกระตือรือร้นในการค้นคว้าเทคโนโลยีใหม่ สามารถปรับตัวเข้ากับเครื่องมือใหม่ได้รวดเร็ว</p>
+              <div class="skill-progress-track">
+                <div class="skill-progress-bar" style="width: 95%;"></div>
+              </div>
+            </div>
+
+            <!-- การตัดสินใจที่รวดเร็ว -->
+            <div class="skill-card">
+              <div class="skill-card-top">
+                <div class="skill-title-group">
+                  <div class="skill-icon-wrap decision">
+                    <i data-lucide="check-circle-2"></i>
+                  </div>
+                  <span class="skill-name">การตัดสินใจที่รวดเร็ว</span>
+                </div>
+                <span class="skill-level-badge">มีไหวพริบแก้ปัญหาเฉพาะหน้า</span>
+              </div>
+              <p class="skill-desc">ประเมินสถานการณ์อย่างรอบคอบ พร้อมหาแนวทางแก้ไขปัญหาที่เกิดขึ้นได้อย่างทันท่วงที</p>
+              <div class="skill-progress-track">
+                <div class="skill-progress-bar" style="width: 82%;"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================================================================
+       6. ACTIVITIES & INTERESTS SECTION
+       =================================================================== -->
+  <section class="activities" id="activities">
+    <div class="container">
+      <div class="section-header fade-in-element">
+        <div class="section-badge">
+          <i data-lucide="compass"></i>
+          <span>ACTIVITIES &amp; INTERESTS</span>
+        </div>
+        <h2 class="section-title">กิจกรรมและความชอบ</h2>
+        <p class="section-desc">กิจกรรมยามว่างที่ช่วยเติมเต็มความคิดสร้างสรรค์ พลังกาย และสมาธิในการเรียนรู้</p>
+      </div>
+
+      <div class="activities-grid">
+        <!-- 1. ฟังเพลง -->
+        <div class="activity-card fade-in-element delay-1">
+          <div class="activity-media">
+            <span class="activity-badge">
+              <i data-lucide="headphones"></i>
+              <span>Music &amp; Focus</span>
+            </span>
+            <img src="assets/images/activity-music.svg" alt="กิจกรรมฟังเพลง" loading="lazy">
+          </div>
+          <div class="activity-body">
+            <h3 class="activity-title">ฟังเพลง (Listening to Music)</h3>
+            <p class="activity-desc">
+              การฟังเพลงเป็นกิจกรรมโปรดที่ช่วยสร้างบรรยากาศ เสริมสมาธิในการเขียนโค้ดและอ่านตำรา 
+              ช่วยผ่อนคลายความตึงเครียดและจุดประกายความคิดสร้างสรรค์ใหม่ ๆ อยู่เสมอ
+            </p>
+            <div class="activity-benefits">
+              <span class="benefit-pill">เสริมสร้างสมาธิ</span>
+              <span class="benefit-pill">ผ่อนคลายสมอง</span>
+              <span class="benefit-pill">เพิ่มประสิทธิภาพการทำงาน</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- 2. อ่านหนังสือ -->
+        <div class="activity-card fade-in-element delay-2">
+          <div class="activity-media">
+            <span class="activity-badge">
+              <i data-lucide="book-open"></i>
+              <span>Knowledge &amp; Growth</span>
+            </span>
+            <img src="assets/images/activity-reading.svg" alt="กิจกรรมอ่านหนังสือ" loading="lazy">
+          </div>
+          <div class="activity-body">
+            <h3 class="activity-title">อ่านหนังสือ (Reading Books)</h3>
+            <p class="activity-desc">
+              ชอบอ่านหนังสือเพื่อเติมเต็มความรู้ ทั้งหนังสือด้านเทคโนโลยี วิทยาการคอมพิวเตอร์ 
+              และการพัฒนาตนเอง (Self-Improvement) ช่วยเปิดมุมมองความคิดให้กว้างไกลและลึกซึ้งยิ่งขึ้น
+            </p>
+            <div class="activity-benefits">
+              <span class="benefit-pill">เปิดมุมมองใหม่</span>
+              <span class="benefit-pill">พัฒนาการคิดเชิงตรรกะ</span>
+              <span class="benefit-pill">อัปเดตเทรนด์ความรู้</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- 3. เล่นกีฬา -->
+        <div class="activity-card fade-in-element delay-3">
+          <div class="activity-media">
+            <span class="activity-badge">
+              <i data-lucide="trophy"></i>
+              <span>Health &amp; Energy</span>
+            </span>
+            <img src="assets/images/activity-sports.svg" alt="กิจกรรมเล่นกีฬา" loading="lazy">
+          </div>
+          <div class="activity-body">
+            <h3 class="activity-title">เล่นกีฬา (Playing Sports)</h3>
+            <p class="activity-desc">
+              การออกกำลังกายและเล่นกีฬาช่วยเสริมสร้างสุขภาพร่างกายให้แข็งแรง สดชื่น กระปรี้กระเปร่า 
+              พร้อมทั้งฝึกฝนทักษะการทำงานร่วมกับเพื่อนร่วมทีม ความมีน้ำใจนักกีฬา และการมีวินัย
+            </p>
+            <div class="activity-benefits">
+              <span class="benefit-pill">สุขภาพแข็งแรง</span>
+              <span class="benefit-pill">ฝึกการทำงานเป็นทีม</span>
+              <span class="benefit-pill">มีวินัยและความอดทน</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================================================================
+       7. CAREER GOALS SECTION
+       =================================================================== -->
+  <section class="goals" id="goals">
+    <div class="container">
+      <div class="section-header fade-in-element">
+        <div class="section-badge">
+          <i data-lucide="target"></i>
+          <span>CAREER GOALS</span>
+        </div>
+        <h2 class="section-title">เป้าหมายในอนาคต</h2>
+        <p class="section-desc">ความมุ่งมั่นและเส้นทางอาชีพที่ตั้งใจจะพัฒนาตนเองอย่างต่อเนื่องเพื่อไปให้ถึงจุดหมาย</p>
+      </div>
+
+      <div class="goals-grid">
+        <!-- Goal 1: Programmer -->
+        <div class="goal-card fade-in-element delay-1">
+          <div class="goal-card-top">
+            <div class="goal-icon-large">
+              <i data-lucide="terminal"></i>
+            </div>
+            <span class="goal-type-badge">Primary Career</span>
+          </div>
+
+          <h3 class="goal-title">Programmer / Software Developer</h3>
+          <p class="goal-desc">
+            มุ่งมั่นที่จะเติบโตเป็นนักพัฒนาโปรแกรมมืออาชีพ เชี่ยวชาญการเขียนโค้ดที่มีประสิทธิภาพ 
+            สามารถพัฒนาเว็บแอปพลิเคชันและซอฟต์แวร์ที่ช่วยแก้ไขปัญหาให้กับผู้ใช้งานและองค์กรได้อย่างแท้จริง
+          </p>
+
+          <div class="goal-illustration">
+            <img src="assets/images/career-programmer.svg" alt="Career Goal Programmer" loading="lazy">
+          </div>
+
+          <ul class="goal-action-items">
+            <li class="goal-item">
+              <i data-lucide="check-circle-2"></i>
+              <span>ฝึกฝนภาษาโปรแกรมมิ่งและเฟรมเวิร์กสมัยใหม่อย่างต่อเนื่อง</span>
+            </li>
+            <li class="goal-item">
+              <i data-lucide="check-circle-2"></i>
+              <span>สร้างสรรค์ผลงานโปรเจกต์จริงเพื่อสะสมประสบการณ์</span>
+            </li>
+            <li class="goal-item">
+              <i data-lucide="check-circle-2"></i>
+              <span>พัฒนาโค้ดตามมาตรฐาน Clean Code และสถาปัตยกรรมระบบที่ดี</span>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Goal 2: เปิดธุรกิจส่วนตัว -->
+        <div class="goal-card fade-in-element delay-2">
+          <div class="goal-card-top">
+            <div class="goal-icon-large business">
+              <i data-lucide="rocket"></i>
+            </div>
+            <span class="goal-type-badge">Entrepreneurship</span>
+          </div>
+
+          <h3 class="goal-title">เปิดธุรกิจส่วนตัว (Tech Business Owner)</h3>
+          <p class="goal-desc">
+            นำความรู้และประสบการณ์ด้านเทคโนโลยีสารสนเทศ การพัฒนาซอฟต์แวร์ และฮาร์ดแวร์ 
+            มาต่อยอดสู่การสร้างโมเดลธุรกิจของตนเอง พัฒนาผลิตภัณฑ์หรือบริการเทคโนโลยีที่สร้างประโยชน์แก่สังคม
+          </p>
+
+          <div class="goal-illustration">
+            <img src="assets/images/career-business.svg" alt="Career Goal Business Owner" loading="lazy">
+          </div>
+
+          <ul class="goal-action-items">
+            <li class="goal-item">
+              <i data-lucide="check-circle-2"></i>
+              <span>ศึกษาทักษะการบริหารจัดการธุรกิจ การตลาด และการเงิน</span>
+            </li>
+            <li class="goal-item">
+              <i data-lucide="check-circle-2"></i>
+              <span>มองหาโอกาสใหม่ ๆ ในวงการดิจิทัลและสร้างสรรค์นวัตกรรม</span>
+            </li>
+            <li class="goal-item">
+              <i data-lucide="check-circle-2"></i>
+              <span>สร้างทีมงานที่มีวิสัยทัศน์ร่วมกันเพื่อขับเคลื่อนธุรกิจให้เติบโต</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Inspiring Quote Banner -->
+      <div class="goals-vision-banner fade-in-element">
+        <div class="vision-text">
+          <h3>"เทคโนโลยีพัฒนาอย่างไม่หยุดยั้ง การเรียนรู้ของผมก็เช่นกัน"</h3>
+          <p>พร้อมเรียนรู้ ทำงานหนัก และก้าวข้ามทุกความท้าทายเพื่อความสำเร็จในสายงาน IT</p>
+        </div>
+        <a href="#contact" class="btn btn-vision">
+          <i data-lucide="send"></i>
+          <span>ร่วมงานกับผม (Contact Me)</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================================================================
+       8. CONTACT SECTION
+       =================================================================== -->
+  <section class="contact" id="contact">
+    <div class="container">
+      <div class="section-header fade-in-element">
+        <div class="section-badge">
+          <i data-lucide="message-square"></i>
+          <span>GET IN TOUCH</span>
+        </div>
+        <h2 class="section-title">ช่องทางการติดต่อ</h2>
+        <p class="section-desc">ยินดีรับฟังข้อเสนอแนะ โอกาสในการฝึกงาน หรือร่วมพูดคุยแลกเปลี่ยนด้านเทคโนโลยี</p>
+      </div>
+
+      <div class="contact-grid">
+        <!-- Left: Direct Contact Information -->
+        <div class="contact-info-panel fade-in-element delay-1">
+          <!-- 1. โทรศัพท์ -->
+          <div class="contact-card">
+            <div class="contact-card-left">
+              <div class="contact-icon-box phone">
+                <i data-lucide="phone"></i>
+              </div>
+              <div class="contact-details">
+                <h4>เบอร์โทรศัพท์ (Telephone)</h4>
+                <a href="tel:0618309944" class="contact-value">061-830-9944</a>
+              </div>
+            </div>
+            <button type="button" class="btn-copy" data-copy="061-830-9944" data-copy-label="เบอร์โทรศัพท์" title="คัดลอกเบอร์โทร">
+              <i data-lucide="copy"></i>
+            </button>
+          </div>
+
+          <!-- 2. LINE -->
+          <div class="contact-card">
+            <div class="contact-card-left">
+              <div class="contact-icon-box line">
+                <i data-lucide="message-circle"></i>
+              </div>
+              <div class="contact-details">
+                <h4>LINE ID</h4>
+                <a href="https://line.me/ti/p/~mxzart_k" target="_blank" rel="noopener noreferrer" class="contact-value">mxzart_k</a>
+              </div>
+            </div>
+            <button type="button" class="btn-copy" data-copy="mxzart_k" data-copy-label="LINE ID" title="คัดลอก LINE ID">
+              <i data-lucide="copy"></i>
+            </button>
+          </div>
+
+          <!-- 3. Facebook -->
+          <div class="contact-card">
+            <div class="contact-card-left">
+              <div class="contact-icon-box facebook">
+                <i data-lucide="facebook"></i>
+              </div>
+              <div class="contact-details">
+                <h4>Facebook</h4>
+                <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer" class="contact-value">Kise Mochi</a>
+              </div>
+            </div>
+            <button type="button" class="btn-copy" data-copy="Kise Mochi" data-copy-label="ชื่อ Facebook" title="คัดลอกชื่อ Facebook">
+              <i data-lucide="copy"></i>
+            </button>
+          </div>
+
+          <!-- Privacy & Address Friendly Note -->
+          <div class="privacy-note-card">
+            <i data-lucide="shield-check"></i>
+            <div>
+              <strong style="display: block; margin-bottom: 0.2rem; color: var(--purple-950);">ความเป็นส่วนตัวและความปลอดภัย</strong>
+              <p>
+                ที่อยู่โดยละเอียดและเอกสารฉบับเต็มยินดีจัดส่งเพิ่มเติมเมื่อมีการติดต่อเพื่อการฝึกงานหรือร่วมงานกับองค์กรของท่าน
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right: Interactive Message Form -->
+        <div class="contact-form-card fade-in-element delay-2">
+          <h3 class="form-title">ส่งข้อความถึงผม</h3>
+          <p class="form-subtitle">กรอกแบบฟอร์มด้านล่างเพื่อติดต่อสอบถามหรือมอบโอกาสในการร่วมงาน</p>
+
+          <form id="contactForm">
+            <div class="form-group">
+              <label for="contactName" class="form-label">ชื่อ - นามสกุล หรือ บริษัทของคุณ</label>
+              <input type="text" id="contactName" class="form-control" placeholder="เช่น คุณสมชาย หรือ บริษัท เอบีซี จำกัด" required>
+            </div>
+
+            <div class="form-group">
+              <label for="contactEmail" class="form-label">อีเมลหรือเบอร์ติดต่อกลับ</label>
+              <input type="text" id="contactEmail" class="form-control" placeholder="name@example.com หรือ 08X-XXX-XXXX" required>
+            </div>
+
+            <div class="form-group">
+              <label for="contactMessage" class="form-label">ข้อความ / รายละเอียด</label>
+              <textarea id="contactMessage" class="form-control" placeholder="พิมพ์ข้อความที่ต้องการติดต่อที่นี่..." required></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-primary btn-submit">
+              <i data-lucide="send"></i>
+              <span>ส่งข้อความติดต่อ (Send Message)</span>
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================================================================
+       9. FOOTER
+       =================================================================== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <div class="brand-icon">
+            <span>T</span>
+          </div>
+          <div>
+            <div style="font-weight: 700; color: var(--purple-950); font-size: 1.15rem;">ปัทมราช บูรณวินซ์ (ต้า)</div>
+            <div style="font-size: 0.82rem; color: var(--pink-600);">IT Student &amp; Aspiring Programmer</div>
+          </div>
+        </div>
+
+        <ul class="footer-nav">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#education">Education</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#activities">Activities</a></li>
+          <li><a href="#goals">Goals</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-bottom">
+        <p class="footer-copy">© 2026 Patthamarat Portfolio. All Rights Reserved.</p>
+        <button type="button" class="btn-back-to-top" id="backToTopBtn" aria-label="กลับสู่ด้านบน">
+          <i data-lucide="arrow-up"></i>
+          <span>กลับสู่ด้านบน</span>
+        </button>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ===================================================================
+       10. RESUME PREVIEW MODAL
+       =================================================================== -->
+  <div class="modal-backdrop" id="resumeModal" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+    <div class="modal-card">
+      <div class="modal-header">
+        <h3 id="modalTitle">
+          <i data-lucide="file-text"></i>
+          <span>เรซูเม่ต้นฉบับ (Original Resume)</span>
+        </h3>
+        <button type="button" class="modal-close-btn modal-close-trigger" aria-label="ปิดหน้าต่าง">
+          <i data-lucide="x"></i>
+        </button>
+      </div>
+      <div class="modal-body">
+        <img src="assets/images/resume-original.jpg" alt="เอกสารเรซูเม่ต้นฉบับ ปัทมราช บูรณวินซ์" loading="lazy">
+      </div>
+      <div class="modal-footer">
+        <a href="assets/images/resume-original.jpg" download="Resume_Patthamarat.jpg" class="btn btn-secondary">
+          <i data-lucide="download"></i>
+          <span>ดาวน์โหลดภาพเรซูเม่</span>
+        </a>
+        <button type="button" class="btn btn-primary modal-close-trigger">
+          <span>ปิดหน้าต่าง</span>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Toast Notification Container -->
+  <div class="toast-notification" id="toastNotification" role="alert">
+    <i data-lucide="check-circle" class="toast-icon"></i>
+    <span id="toastMessage">คัดลอกข้อมูลสำเร็จ</span>
+  </div>
+
+  <!-- Main JavaScript -->
+  <script src="assets/js/main.js"></script>
+
+  <!-- Lucide Icons Initialization -->
+  <script>
+    if (window.lucide && typeof window.lucide.createIcons === 'function') {
+      window.lucide.createIcons();
+    }
+  </script>
+</body>
+</html>
